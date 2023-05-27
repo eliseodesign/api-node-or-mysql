@@ -5,7 +5,7 @@ const path = __dirname
 const removeExtension = (fileName)=> fileName.split(".").shift()
 
 
-fs.readdirSync(path).filter( file => {
+fs.readdirSync(path).forEach( file => {
   const name = removeExtension(file)
   if(name != "index"){
     console.log("cargando")

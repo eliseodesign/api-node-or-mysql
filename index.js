@@ -1,5 +1,5 @@
 require("dotenv").config()
-const dbConnect = require("./src/config/mongo")
+const dbConnect = require("./src/shared/config/mongo")
 const app = require("./src/app")
 
 const PORT = process.env.PORT || 3021
